@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    
+    <header>
+        <div style="align-items: center; " class="head">
+            <div class="Abect">
+                <a href="../home/home.html" style="color: black;"><h1>Home</h1></a>
+
+                <a href="../product/product.html" style="color: black;"><h1>Product</h1></a>
+                <a href="../about/about.html" style="color: black;"><h1>About</h1></a>
+
+            </div>
+            <button class="diablo">🟰</button>
+            <dialog class="modal_ab">
+                    <a href="../home/home.html" style="color: black;"><h1>Home</h1></a>
+                    <a href="../product/product.html" style="color: rgb(0, 0, 0);"><h1>Product</h1></a>
+                    <a href="../about/about.html" style="color: rgb(0, 0, 0);"><h1>About</h1></a>
+                    
+             
+                <button type="button" class="closeBtn">Close</button>
+            </dialog>
+
+            <img src="../img/comfy (1).png" alt="">  
+            <div class="dialogUser">
+
+                <img class="openBtn" style="width: 20px;" src="../img/Vector.png" alt="">
+                <p class="cartCount"></p>
+            </div>           
+        </div>
+    </header>
+    <div class="ab" >
+        <h1 style="color: #235275; padding: 90px;">Home / Product</h1>
+    </div>
+  
+
+    <div class="product_1">
+        <aside>
+            <input type="text" placeholder="Search..." class="Search" style="background-color: #F1F5F8; width: 200px; height: 48px; border: 0;">
+            <div style="font-size: 20px;">
+                <h1>Company</h1>
+                <p style="color: #235275;">All</p>
+                <p style="color: #235275;">Ikea</p>
+                <p style="color: #235275;">Marcos</p>
+                <p style="color: #235275;">Caressa</p>
+                <p style="color: #235275;">Liddy</p>
+            </div>
+        
+            <div>
+                <label for="priceRange">Price</label>
+                <input type="range" class="range" id="priceRange" min="0.99" max="80.99" value="80" step="1">
+                <p style="color: #235275;">Value: <span id="priceValue">$80</span></p>
+            </div>
+            
+        </aside>
+
+        <div class="box1"></div>
+    </div>
+
+    <dialog class="modal">
+        <div class="modal_content">
+            <button class="close_Btn">❌</button>
+            <h2 style="text-align: center;"> Your Bag</h2>
+
+            <div class="cart_item">
+                <button class="remove_item">✖</button> 
+            </div>
+
+            <div class="cart_footer">
+                <p><strong>Total:</strong> <span class="total_price">$0</span></p>
+                <button class="checkoutBtn">CHECKOUT</button>
+            </div>
+        </div>
+    </dialog>
+
+          
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- <script src="product.js"></script> -->
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

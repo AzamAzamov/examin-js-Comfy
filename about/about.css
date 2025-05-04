@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.head a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sec2{
+    font-size: 30px;
+    width: 1000px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    
+}
+.sec_1{
+    display: flex;
+
+    width: 1000px;
+    margin: auto;
+    gap: 20px;
+    padding: 30px;
+}
+h3{
+    font-size: 24px;
+    color: #235275;
+}
+.ab{
+    height: 200px;
+    background-color: #F1F5F8;
+}
+.diablo{
+    display: none;
+}
+.Abect{
+    display: flex;
+     gap: 20px;
+}
+.openBtn {
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.dialogUser{
+    display: flex;
+    text-align: center;
+}
+.cartCount{
+    background-color: aqua;
+    width: 20px;
+    color: black;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right:50px;
+    top: 70px;
+    text-align: center;
+}
+
+.modal{
+    border: none;
+    position: fixed;
+    left: auto;
+}
+.modal_content {
+    
+    height: 1200px;
+    margin: auto;
+    width: 350px;
+    
+    margin-right: 0px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    text-align: center;
+}
+.cart_item img {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.item_details {
+    flex-grow: 1;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity button {
+    background: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cart_footer {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.checkoutBtn {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.active button{
+    background-color:transparent;
+    color: #BA5D2C;
+    /* border-radius: 10px; */
+    border: 0;
+    width: 20px;
+    /* font-bold: bold; */
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #BA5D2C;
+}
+.deleteBtn{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    display: flex;
+
+}
+
+@media (max-width:510px){
+    .head {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .head div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+     
+    }
+
+    .head img {
+        width: 50px;
+    }
+    .sec_1{
+        flex-direction: column;
+        width: 300px;
+        font-size: 20px;
+    }
+    .sec2{
+        width: 300px;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .sec2 h1{
+        font-size: 10px;
+    }
+    .ab{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ab h1{
+        font-size: 20px;
+    }
+    .diablo{
+        display: block;
+    }
+    .Abect{
+        display: none!important;
+    }
+    .cartCount{
+        position: absolute;
+    left: 320px;
+    top: 53px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}

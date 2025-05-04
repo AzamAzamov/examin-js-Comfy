@@ -1,0 +1,310 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: url(../img/Rectangle\ 37.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1000px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;   
+}
+
+.head a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rest{
+    margin-left: 100px;
+    margin-top: 200px;
+    font-size: 30px;
+}
+.button1{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product div{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 200px;
+    margin-top: 20px;
+    justify-content:center;
+
+}
+
+
+
+.all{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 20px;
+}
+.all button{
+    width: 220px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #BA5D2C;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+}
+.diablo{
+    display: none;
+}
+.Abect{
+    display: flex;
+     gap: 20px;
+}
+
+.openBtn {
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.close_Btn{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+}
+.modal_abd {
+    width: 50%;
+    max-width: 400px;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    margin-left: auto;
+   
+
+} 
+.modal{
+    border: none;
+    position: fixed;
+    left: auto;
+}
+.modal_content {
+    
+    height: 1200px;
+    margin: auto;
+    width: 350px;
+    
+    margin-right: 0px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    text-align: center;
+    /* justify-self: center; */
+}
+.cart_item img {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.item_details {
+    flex-grow: 1;
+}
+.biv{
+    text-align: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity button {
+    background: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cart_footer {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.checkoutBtn {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+.dialogUser{
+    display: flex;
+    text-align: center;
+    
+}
+.cartCount{
+    background-color: aqua;
+    width: 20px;
+    color: black;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    text-align: center;
+}
+
+
+.deleteBtn{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    display: flex;
+
+}
+.active{
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+
+}
+.active button{
+    background-color:transparent;
+   
+    border: 0;
+
+    font-weight: bold;
+  
+}
+.product div{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 200px;
+    margin-top: 20px;
+    justify-content:center;
+
+}
+
+@media  (max-width: 510px) {
+    .head {
+        display: flex;
+        text-align: center;
+        align-items: start;
+        gap: 40px;
+        font-size: 10px;
+    }
+    .head div {
+        display: flex; 
+        flex-direction: column;
+        gap: 10px;
+     
+    }
+    .h1{
+        font-size: 30px;
+    }
+    header{
+        background-image: url(../img/Rectangle\ 37.png);
+        background-repeat: no-repeat;
+        background-size: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .head img {
+        width: 50px;
+    }
+    .rest {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: auto;
+        
+        margin-bottom: 500px;
+    }
+
+    .rest h1 {
+        font-size: 24px;
+    }
+
+    .rest p {
+        font-size: 16px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .all {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .diablo{
+        display: block;
+    }
+    .Abect{
+        display: none!important;
+    }
+    .cartCount{
+        position: absolute;
+    left: 290px;
+    top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
