@@ -52,8 +52,7 @@ export function getData(dataCache) {
         a.style.backgroundColor="transparent"
         a.style.border="0"
         a.style.borderBottom="0"
-        
-        // a.style.borderBottom="1px solid black"
+
         a.style.boxShadow="4px 4px 10px black"
         a.style.borderRadius="5px"
         let name = document.createElement("h3");
@@ -61,11 +60,10 @@ export function getData(dataCache) {
         img.classList.add("imgpr")
         img.src = e.img;
         let price = document.createElement("h5");
-        let status = document.createElement("h4");
         let div1 = document.createElement('div')
         div1.classList.add('content')
-
-        status.innerHTML = e.status === true ? "Active" : "Inactive";
+        
+        
         name.innerHTML = e.name;
         price.innerHTML = `$${e.price}`;
         name.style.color = "gray";
@@ -91,7 +89,7 @@ export function getData(dataCache) {
 
 
         div1.append(infoBtn, addToCartBtn)
-        div.append(div1,img, name, price, status,active);
+        div.append(div1,img, name, price,active);
         box1.append(div);
     });
 }
